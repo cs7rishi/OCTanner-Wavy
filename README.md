@@ -1,33 +1,34 @@
 # OCTanner-Wavy
 
-Run locally
+<h2>Prerequisite:</h2>
+Spotify Account
 
-<ol>
-<li>Create a new Spotify app in your Spotify Developer Dashboard</li>
-<li>Add http://localhost:4000/callback to your app's redirect URl's. 
-Note your app's Client ID and Client Secret.</li>
-<li>Create a file named .env in the project's root directory with the following values:
-<br>
-```
-CLIENT_ID=YOUR_CLIENT_ID_HERE
-CLIENT_SECRET=YOUR_CLIENT_SECRET_HERE
-REDIRECT_URI=http://localhost:4000/callback
-PROJECT_ROOT=http://localhost:4000
-NODE_ENV=development
-```
-</li>
-<li>Install using NPM <br> ```npm i```</li>
-<li>Serve project <br> ```npm run serve```</li>
-<li>Visit ```http://localhost:3000``` and log in with your Spotofy account.</li>
-<li>Play a song in your spotify client of choice. The visualizer will take a moment to sync before initializing.</li>
-</ol>
+<h2>Create Spotify Credentials</h2>
 
-Build & Serve (Production)
+1. Create a new Spotify app in your <a href="https://developer.spotify.com/dashboard/login" target="_blank">Spotify Developer Dashboard </a>
+2. Add ``` http://localhost:4000/callback ``` to your app's Redirect URIs. Note your app's Client ID and Client Secret.
 
-<ol>
-<li>Follow steps 1 through 4 above</li>
-<li>In your .env file, set NODE_ENV to production</li>
-<li>Start project using NPM.</li>
-</ol>
+<h2> Run Backend</h2>
+1. Move into server Directory. <br>
+2. Update the  .env as follow: <br>
 
-``` npm run start```
+CLIENT_ID=YOUR_CLIENT_ID_HERE <br>
+CLIENT_SECRET=YOUR_CLIENT_SECRET_HERE <br>
+REDIRECT_URI= ``` http://localhost:4000/callback ``` <br>
+PROJECT_ROOT= ``` http://localhost:4000 ```<br>
+REACT_CLIENT= ``` http://localhost:3000 ```<br>
+ 
+
+3. Install using <br> ``` npm i ```
+4. Start project <br> ``` npm start ```
+
+<h2> Run Client</h2>
+
+1. Move into ``` client ``` directory
+2. Install using ``` npm i ```
+3. Start client service ``` npm start ```
+
+# Finally
+
+Visit ``` localhost:3000 ``` <br> 
+Play a song on spotify and enjoy
