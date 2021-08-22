@@ -1,0 +1,239 @@
+@keyframes fade-out {
+  0% {
+    background: #fff;
+  }
+  to {
+    background: transparent;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.home {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.home:before {
+  animation: fade-out 1s ease-in forwards;
+  animation-delay: 0.5s;
+}
+.home.loading:before,
+.home:before {
+  content: "";
+  background: #fff;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.home.loading:before {
+  opacity: 0;
+  animation: fade-in 0.4s linear forwards;
+  animation-delay: 0.5s;
+}
+.text {
+  position: relative;
+  text-align: center;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+h1 {
+  font-size: 200px;
+  line-height: 200px;
+  font-family: Gochi Hand, cursive;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+}
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 174.4px;
+    line-height: 174.4px;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 148.8px;
+    line-height: 148.8px;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 123.2px;
+    line-height: 123.2px;
+  }
+}
+@media (max-width: 640px) {
+  h1 {
+    font-size: 97.6px;
+    line-height: 97.6px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+@media (max-width: 320px) {
+  h1 {
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+h1 i {
+  animation: slide-up 20s linear infinite forwards;
+  display: block;
+}
+h1 i:first-child {
+  animation-delay: -2s;
+}
+h1 i:nth-child(2) {
+  animation-delay: -4s;
+}
+h1 i:nth-child(3) {
+  animation-delay: -6s;
+}
+h1 i:nth-child(4) {
+  animation-delay: -8s;
+}
+h2 {
+  font-size: 26px;
+  line-height: 26px;
+  margin-top: -50px;
+  font-family: Covered By Your Grace;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+@media (max-width: 1280px) {
+  h2 {
+    font-size: 24.4px;
+    line-height: 24.4px;
+    margin-top: -40px;
+  }
+}
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 22.8px;
+    line-height: 22.8px;
+    margin-top: -30px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 21.2px;
+    line-height: 21.2px;
+    margin-top: -20px;
+  }
+}
+@media (max-width: 640px) {
+  h2 {
+    font-size: 19.6px;
+    line-height: 19.6px;
+    margin-top: -10px;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 320px) {
+  h2 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 0;
+  }
+}
+img {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) scale(0.5);
+  z-index: -1;
+  animation: rotate 10s linear infinite;
+}
+button {
+  width: auto;
+  height: 40px;
+  font-family: Share, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 40px;
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #fff;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 100px;
+  transform: translateX(-50%) translateY(150px);
+  margin: 0 auto;
+  font-family: Covered By Your Grace;
+}
+button:active,
+button:focus {
+  outline: 0;
+}
+button:hover {
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+  color: #000;
+}
+button:active {
+  transform: translateX(-50%) translateY(150px) scale(0.5);
+}

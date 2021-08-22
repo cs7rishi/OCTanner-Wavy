@@ -1,0 +1,199 @@
+@keyframes fade-out {
+  from {
+    background: white;
+  }
+  to {
+    opacity: transparent;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.home {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  /* z-index: 10; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.home::before {
+  content: "";
+  background: white;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  animation: fade-out 1000ms ease-in forwards;
+  animation-delay: 500ms;
+}
+.home.loading::before {
+  content: "";
+  background: white;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  animation: fade-in 400ms linear forwards;
+  animation-delay: 500ms;
+}
+.text {
+  position: relative;
+  text-align: center;
+}
+.text div {
+  min-width: 100%;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* need scale for h1 */
+
+h1 {
+  font-size: 200px;
+  line-height: 200px;
+  font-family: Gochi Hand, cursive;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  display: flex;
+}
+@media (max-width: 1280px) {
+  h1 {
+    font-size: 174.4px;
+    line-height: 174.4px;
+  }
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 148.8px;
+    line-height: 148.8px;
+  }
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+h1 i {
+  animation: slide-up 20000ms linear forwards infinite;
+  display: block;
+}
+
+h1 i:first-child {
+  animation-delay: -2s;
+}
+h1 i:nth-child(2) {
+  animation-delay: -4s;
+}
+h1 i:nth-child(3) {
+  animation-delay: -6s;
+}
+h1 i:nth-child(4) {
+  animation-delay: -8s;
+}
+
+/* h2-require scale */
+
+h2 {
+  font-size: 26px;
+  line-height: 26px;
+  margin-top: -50px;
+  font-family: Covered By Your Grace;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+@media (max-width: 1280px) {
+  h2 {
+    font-size: 24.4px;
+    line-height: 24.4px;
+    margin-top: -40px;
+  }
+}
+
+img {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) scale(0.5);
+  z-index: -1;
+  animation: rotate 10s linear infinite;
+}
+
+button {
+  width: auto;
+  height: 40px;
+  font-family: Share, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 40px;
+  display: inline-block;
+  background: transparent;
+  color: #fff;
+  padding: 0 20px;
+  border-radius: 50px;
+  text-align: center;
+  border: 2px solid #fff;
+  font-size: 20px;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 100px;
+  transform: translateX(-50%) translateY(150px);
+  margin: 0 auto;
+  font-family: Covered By Your Grace;
+}
+
+button:active,
+button:focus {
+  outline: 0;
+}
+button:hover {
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+  color: #000;
+}
+button:active {
+  transform: translateX(-50%) translateY(150px) scale(0.5);
+}

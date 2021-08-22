@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Gochi+Hand&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace&display=swap);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html,
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  font-family: Covered By Your Grace;
+  font-weight: 400;
+}
+body * {
+  font-family: inherit;
+  font-weight: inherit;
+}
+#app {
+  position: relative;
+  z-index: 20;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}

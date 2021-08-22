@@ -1,0 +1,53 @@
+@keyframes fade-in{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+.msg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    opacity: 0;
+    transition: opacity 500ms linear;
+    pointer-events: none;
+}
+
+.msg.visible{
+    opacity: 1;
+}
+.status-heading{
+    color: black;
+    animation: fade-in 500ms linear;
+    
+}
+/* 
+.status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h2{
+    color: black;
+}
+.experiment{
+    animation: fade-in 500ms linear;
+}
+
+.msg.visible{
+    opacity: 1;
+}
+
+canvas{
+    display: none;
+    z-index: 2;
+    margin-top: 500px;
+} */
