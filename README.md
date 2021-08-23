@@ -1,5 +1,7 @@
 # OCTanner-Wavy
 
+Vedio for Installation Walkthrough: https://youtu.be/lYoxYmX9GW8
+
 <h2>Prerequisite:</h2>
 Spotify Account
 
@@ -32,3 +34,4 @@ REACT_CLIENT= ``` http://localhost:3000 ```<br>
 
 Visit ``` localhost:3000 ``` <br> 
 Play a song on spotify and enjoy
+
