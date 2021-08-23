@@ -5,7 +5,7 @@
  <p>Video for Installation Walkthrough: https://youtu.be/lYoxYmX9GW8<p>
 
 <h2>Updates</h2>
- Working URL : http://13.233.46.16:3000/
+ Working URL : http://13.126.214.123:3000/
  <br>
  DNS Update Pending : http://wavy.rocks
 
