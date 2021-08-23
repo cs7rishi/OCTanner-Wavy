@@ -1,6 +1,12 @@
 # OCTanner-Wavy
 
-Vedio for Installation Walkthrough: https://youtu.be/lYoxYmX9GW8
+☑️ Fixes<br>
+<br>Issue #14: ``` CORS issue ```
+<br>Issue #13: ``` DNS issue ```
+<br>Issue #12: ``` 3```<sup>``` rd ```</sup> ``` party JS ```
+<br>Issue #11: ``` CSS Breakdown ```
+
+Video for Installation Walkthrough: https://youtu.be/lYoxYmX9GW8
 
 <h2>Prerequisite:</h2>
 Spotify Account
