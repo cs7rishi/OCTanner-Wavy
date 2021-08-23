@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Status from "./Status.jsx";
-import NowPlaying from "./NowPlaying.jsx";
 import WaveSync from "../wavesync";
 
 export default class Visualizer extends Component {
@@ -21,17 +20,17 @@ export default class Visualizer extends Component {
     this.waveSync = new WaveSync();
     this.waveSync.sync.watch("active", () => {
       this.setState({
-        loaded: true
+        loaded: true,
       });
     });
     this.waveSync.sync.watch("noPlayback", (val) => {
       this.setState({
-        noPlayback: val
+        noPlayback: val,
       });
     });
     this.waveSync.sync.watch("currentlyPlaying", (val) => {
       this.setState({
-        nowPlaying: val
+        nowPlaying: val,
       });
     });
   }
@@ -39,8 +38,6 @@ export default class Visualizer extends Component {
     return (
       <div className="visualizer">
         <Status loaded={this.state.loaded} noPlayback={this.state.noPlayback} />
-        <NowPlaying nowPlaying={this.state.nowPlaying} />
-        {/* this is fun */}
       </div>
     );
   }
