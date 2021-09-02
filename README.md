@@ -1,4 +1,5 @@
 # OCTanner-Wavy
+# Service is Terminated(2 Sept @ 22:05)
 
 <h2>Note!!</h2
  <p>All the Issues are related to online deployment, you can run the application on local Machine without any error!!<p>
